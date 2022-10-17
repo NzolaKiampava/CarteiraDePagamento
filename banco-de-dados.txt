@@ -1,0 +1,73 @@
+create database carteira_db;
+
+use carteira_db;
+
+create table users
+(
+	id int auto_increment primary key,
+	userid int(100),
+	username varchar(20),
+	email varchar(100),
+	password varchar(20),
+	date datetime(),
+	online int(11)
+
+)default charset=utf8;
+
+use carteira_db;
+create table pensioner
+(
+	id int auto_increment primary key,
+	userid int,
+	id_operador int(100),
+	username varchar(20),
+	email varchar(20),
+	password varchar(100),
+	telefone varchar(12),
+	gender varchar(20),
+	full_name varchar(20),
+	father_name varchar(20),
+	mother_name varchar(20), 
+	bi_number varchar(50),
+	residence text,
+	naturalness varchar(20),
+	province varchar(20),
+	country varchar(20),
+	birthdate varchar(20),
+	civil_status varchar(20),
+	bi_emission_date varchar(100),
+	bank varchar(20),
+	bank_count_number varchar(100),
+	bank_iban varchar(100),
+	date date,
+	online tinyint
+)default charset=utf8;
+
+ALTER TABLE `pensioner` ADD INDEX(`password`);
+ALTER TABLE `pensioner` ADD INDEX(`username`);
+ALTER TABLE `pensioner` ADD INDEX(`telefone`);
+ALTER TABLE `pensioner` ADD INDEX(`gender`);
+ALTER TABLE `pensioner` ADD INDEX(`province`);
+ALTER TABLE `pensioner` ADD INDEX(`country`);
+ALTER TABLE `pensioner` ADD INDEX(`bank`);
+ALTER TABLE `pensioner` ADD INDEX(`bank_count_number`);
+ALTER TABLE `pensioner` ADD INDEX(`bank_iban`);
+
+
+// criacao da tabela poupanca de nome saving
+
+CREATE TABLE saving
+(
+	id int auto_increment primary key,
+	id_operator bigint(20),
+	amount varchar(20),
+	saving_source varchar(20),
+	account_source varchar(20),
+	company_source varchar(20),
+	account_target varchar(20),
+	enter_date date,
+	enter_user varchar(20),
+	status_date date,
+	saving_status int
+
+);

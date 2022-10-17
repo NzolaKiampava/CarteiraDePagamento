@@ -1,0 +1,95 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">
+        	Username payment<br>
+        	+ Kz 3.000.00
+    	</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="myform" method="post" enctype="multipart/form-data">
+            <table class="table table-bordered table-hover">
+       
+                <tr>
+                    <td style="font-weight: bold;"><i class="fas fa-dollar-sign"></i> Montante</td>
+                    <br>
+                    <td>
+	                    <label>MONTANTE</label>
+	                    <input class="form-control" type="text" name="r_bk_name" value="Kz 3.000.00" readonly>
+               		</td>
+                    
+                </tr>
+
+                <tr>
+                    <td style="font-weight: bold;"><i class="far fa-calendar"></i> Data</td>
+
+                    <br>
+                    <td>
+	                    <label>DATA</label>
+	                    <input class="form-control" type="date" name="r_bk_name" value="5 Ago 2021, 09:47" readonly>
+                	</td>
+                    
+                </tr>
+
+                <tr>
+                    <td style="font-weight: bold;"><i class="fas fa-info-circle"></i>Outras Informações</td>
+
+                    <br>
+                    <td>
+	                    <label>NÚMERO DE OPERAÇÕES</label>
+	                    <input class="form-control" type="date" name="r_bk_name" value="7543848475" readonly>
+                	</td> 
+                	<br>
+                	<td>
+	                    <label>SALDO APÓS MOVIMENTO</label>
+	                    <input class="form-control" type="date" name="r_bk_name" value="+ Kz 23.90" readonly>
+                	</td> 
+                	<br>
+                	<td>
+	                    <label>TIPO DE MOVIMENTO</label>
+	                    <input class="form-control" type="date" name="r_bk_name" value="BPS Debito" readonly>
+                	</td> 
+                </tr>
+
+                <tr>
+                    <td style="font-weight: bold;"><i class="fa fa-bookmark"></i>Organização</td>
+
+                    <br>
+                    <td>
+	                    <label>DESCRITIVO DA OPERAÇÃO</label>
+	                    <input class="form-control" type="date" name="r_bk_name" value="Pag Entidade Recargas directas" readonly>
+                	</td> 
+                	<br>
+                	<td>
+	                    <label>CATEGORIA</label>
+	                   	<br>
+	                    <td>
+	                        <select class="form-control" placeholder="Seleccione uma opção">
+	                        	<option value="Local Transfer"></option>
+	                            <option value="BIC"></option>
+	                            <option value="BPC"></option>
+	                            <option value="BFA"></option>
+	                        </select> 
+	                    </td>
+                	</td> 
+                </tr>
+            </table>
+        </form>  
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
